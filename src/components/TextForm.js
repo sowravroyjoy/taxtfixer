@@ -5,8 +5,30 @@ export default function TextForm(props) {
     let newText = text.toUpperCase();
     setText(newText)
   }
-  const handleDownClick = () => {
+  const handleLoClick = () => {
     let newText = text.toLowerCase();
+    setText(newText)
+  }
+  const handleCaClick = () => {
+    let isSpace = false;
+    let newText = "" + String.fromCharCode(text.charCodeAt(0)-32);
+    let element;
+    for (let index = 1; index < text.length; index++) {
+      element = text.charCodeAt(index);
+      if (element === 32){
+        isSpace = true;
+      }
+      else if (isSpace === true){
+        isSpace = false;
+        element = element - 32;
+      }
+      newText = newText + String.fromCharCode(element);
+
+    }
+    setText(newText)
+  }
+  const handleClClick = () => {
+    let newText = "";
     setText(newText)
   }
   const handleOnChange = (event) => {
@@ -32,8 +54,14 @@ export default function TextForm(props) {
       <button className="btn btn-primary" onClick={handleUpClick}>
         Convert to Uppercase
       </button>
-      <button className="btn btn-primary mx-2" onClick={handleDownClick}>
+      <button className="btn btn-primary mx-2" onClick={handleLoClick}>
         Convert to Lowercase
+      </button>
+      <button className="btn btn-primary mx-2" onClick={handleCaClick}>
+        Capitalize
+      </button>
+      <button className="btn btn-primary mx-2" onClick={handleClClick}>
+        Clear
       </button>
       </div>
       <div className="container my-3">
