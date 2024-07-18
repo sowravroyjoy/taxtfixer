@@ -1,13 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 
 export default function About() {
-  let myStyle = {
-    color: "White",
-    backgroundColor: "Black",
-  };
+  const [myStyle, setMyStyle] = useState({
+    color: "Black",
+    backgroundColor: "White",
+  });
+  const [btnText, setBtnText] = useState("Enable Dark Mode");
 
-  const handleTheme = (event) =>{
-
+  const handleTheme = () => {
+    if(myStyle.color === 'White'){
+      setMyStyle({
+        color: "Black",
+        backgroundColor: "White",
+      })
+      setBtnText("Enable Dark Mode")
+    }else{
+      setMyStyle({
+        color: "White",
+        backgroundColor: "Black",
+      })
+      setBtnText("Enable Light Mode")
+    }
   }
 
   return (
@@ -113,8 +126,8 @@ export default function About() {
           </div>
         </div>
         <div className="container my-3">
-          <button type="button" className="btn btn-dark" onClick={handleTheme} style={myStyle}>
-            Enable dark mode
+          <button onClick={handleTheme} type="button" className="btn btn-dark" style={myStyle}>
+            {btnText}
           </button>
         </div>
       </div>
