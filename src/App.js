@@ -36,7 +36,7 @@ function App() {
   };
   return (
     <>
-      <Router>
+      <Router basename="/textfixer">
         <Navbar title="TextFixer" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-3">
