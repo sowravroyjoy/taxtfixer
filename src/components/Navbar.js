@@ -9,7 +9,7 @@ export default function Navbar(props) {
         className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
       >
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/textfixer">
+          <Link className="navbar-brand" to="/">
             {props.title}
           </Link>
           {/* <a className="navbar-brand" to="#">
@@ -32,7 +32,7 @@ export default function Navbar(props) {
                 <Link
                   className="nav-link active"
                   aria-current="page"
-                  to="/textfixer"
+                  to="/"
                 >
                   Home
                 </Link>

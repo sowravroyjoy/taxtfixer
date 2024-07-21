@@ -43,7 +43,7 @@ function App() {
           <Routes>
             <Route
               exact
-              path="/textfixer"
+              path="/"
               element={
                 <TextForm
                   heading="Enter your text to analyze"
