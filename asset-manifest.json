@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/taxtfixer/static/css/main.dc4d6ff2.css",
+    "main.js": "/taxtfixer/static/js/main.de7de39e.js",
+    "static/js/453.02b6ed6f.chunk.js": "/taxtfixer/static/js/453.02b6ed6f.chunk.js",
+    "index.html": "/taxtfixer/index.html",
+    "main.dc4d6ff2.css.map": "/taxtfixer/static/css/main.dc4d6ff2.css.map",
+    "main.de7de39e.js.map": "/taxtfixer/static/js/main.de7de39e.js.map",
+    "453.02b6ed6f.chunk.js.map": "/taxtfixer/static/js/453.02b6ed6f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc4d6ff2.css",
+    "static/js/main.de7de39e.js"
+  ]
+}
