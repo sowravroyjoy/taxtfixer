@@ -36,14 +36,14 @@ function App() {
   };
   return (
     <>
-    {/* <Router> */}
-      <Navbar title="TextFixer" mode={mode} toggleMode={toggleMode} />
-      <Alert alert={alert} />
-      <div className="container my-3">
-        
+      {/* <Router> */}
+        <Navbar title="TextFixer" mode={mode} toggleMode={toggleMode} />
+        <Alert alert={alert} />
+        <div className="container my-3">
           {/* <Routes>
             <Route
-              exact path="/"
+              exact
+              path="/"
               element={ */}
                 <TextForm
                   heading="Enter your text to analyze"
@@ -52,10 +52,9 @@ function App() {
                 />
               {/* }
             />
-            <Route exact path="/about" element={<About />} />
+            <Route exact path="/about" element={<About mode={mode}/>} />
           </Routes> */}
-        
-      </div>
+        </div>
       {/* </Router> */}
     </>
   );
