@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/textfixer/static/css/main.dc4d6ff2.css",
-    "main.js": "/textfixer/static/js/main.5b6b71df.js",
+    "main.js": "/textfixer/static/js/main.776f2329.js",
     "static/js/453.40f8a125.chunk.js": "/textfixer/static/js/453.40f8a125.chunk.js",
     "index.html": "/textfixer/index.html",
     "main.dc4d6ff2.css.map": "/textfixer/static/css/main.dc4d6ff2.css.map",
-    "main.5b6b71df.js.map": "/textfixer/static/js/main.5b6b71df.js.map",
+    "main.776f2329.js.map": "/textfixer/static/js/main.776f2329.js.map",
     "453.40f8a125.chunk.js.map": "/textfixer/static/js/453.40f8a125.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc4d6ff2.css",
-    "static/js/main.5b6b71df.js"
+    "static/js/main.776f2329.js"
   ]
 }
