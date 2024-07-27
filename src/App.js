@@ -46,7 +46,7 @@ function App() {
               path="/"
               element={
                 <TextForm
-                  heading="Enter your text to analyze"
+                  heading="Try TextFixer - Text Manipulator"
                   mode={mode}
                   showAlert={showAlert}
                 />

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 
 export default function About(props) {
   const myStyle={
@@ -8,7 +8,7 @@ export default function About(props) {
   return (
     <div>
       <div className="container" style={myStyle}>
-        <h1 className="my-3">About Us</h1>
+        <h1 className="my-3">About</h1>
         <div className="accordion" id="accordionExample">
           <div className="accordion-item" style={myStyle}>
             <h2 className="accordion-header">
@@ -21,7 +21,7 @@ export default function About(props) {
                 aria-controls="collapseOne"
                 style={myStyle}
               >
-                Accordion Item #1
+                About Textfixer
               </button>
             </h2>
             <div
@@ -30,15 +30,7 @@ export default function About(props) {
               data-bs-parent="#accordionExample"
             >
               <div className="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions. You can modify any of this with custom CSS or
-                overriding our default variables. It's also worth noting that
-                just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                This is a text analyzer website which can fix and analyze your text content according to your needs. It is not only browser but also device compatible. It has been built using React, BootStrap.
               </div>
             </div>
           </div>
@@ -53,7 +45,7 @@ export default function About(props) {
                 aria-controls="collapseTwo"
                 style={myStyle}
               >
-                Accordion Item #2
+                About Me
               </button>
             </h2>
             <div
@@ -62,47 +54,7 @@ export default function About(props) {
               data-bs-parent="#accordionExample"
             >
               <div className="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <div className="accordion-item" style={myStyle}>
-            <h2 className="accordion-header">
-              <button
-                className="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-                style={myStyle}
-              >
-                Accordion Item #3
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              className="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div className="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                <strong>I am Sowrav Roy Joy.</strong>  I recently have passed out my Master's Degree in Electrical and Computer Engineering where I have major in Computer Engineering. I have been doing programming from my bechelor days and right now trying to learn new technologies which catches my interest and needs.
               </div>
             </div>
           </div>

@@ -1,22 +1,6 @@
 import React, { useState } from "react";
 
 export default function TextForm(props) {
-  // const countWords = (word)=>{
-  //   let totalWords = 0
-  //   let words = text.split[" "];
-  //   for (let i = 0; i < words.length; i++) {
-  //     let word = words[i];
-  //     for (let j = 0; j < word.length; j++) {
-  //       let character = word.at(j);
-  //       if(character !== " "){
-  //         totalWords= totalWords + 1;
-  //       }
-        
-  //     }
-      
-  //   }
-  //   return totalWords;
-  // }
   const handleUpClick = () => {
     let newText = text.toUpperCase();
     setText(newText);
@@ -69,9 +53,9 @@ export default function TextForm(props) {
     <div>
       <div className="container">
         <div className="mb-3">
-          <label htmlFor="textbox" className="form-label">
+          <h1 htmlFor="textbox" className="form-label">
             {props.heading}
-          </label>
+          </h1>
           <textarea
             className="form-control"
             value={text}
@@ -84,33 +68,33 @@ export default function TextForm(props) {
             rows="8"
           ></textarea>
         </div>
-        <button className={`btn btn-${props.mode==='light'?'dark':'secondary'} mx-2 my-2`} onClick={handleUpClick}>
+        <button disabled= {text.length === 0} className={`btn btn-${props.mode==='light'?'dark':'secondary'} mx-2 my-2`} onClick={handleUpClick}>
           Convert to Uppercase
         </button>
-        <button className={`btn btn-${props.mode==='light'?'dark':'secondary'} mx-2 my-2`} onClick={handleLoClick}>
+        <button disabled= {text.length === 0} className={`btn btn-${props.mode==='light'?'dark':'secondary'} mx-2 my-2`} onClick={handleLoClick}>
           Convert to Lowercase
         </button>
-        <button className={`btn btn-${props.mode==='light'?'dark':'secondary'} mx-2 my-2`} onClick={handleCoClick}>
+        <button disabled= {text.length === 0} className={`btn btn-${props.mode==='light'?'dark':'secondary'} mx-2 my-2`} onClick={handleCoClick}>
           Copy
         </button>
-        <button className={`btn btn-${props.mode==='light'?'dark':'secondary'} mx-2 my-2`} onClick={handleCaClick}>
+        <button disabled= {text.length === 0} className={`btn btn-${props.mode==='light'?'dark':'secondary'} mx-2 my-2`} onClick={handleCaClick}>
           Capitalize
         </button>
-        <button className={`btn btn-${props.mode==='light'?'dark':'secondary'} mx-2 my-2`} onClick={handleRmSpClick}>
+        <button disabled= {text.length === 0} className={`btn btn-${props.mode==='light'?'dark':'secondary'} mx-2 my-2`} onClick={handleRmSpClick}>
           Remove Extra Spaces
         </button>
-        <button className={`btn btn-${props.mode==='light'?'dark':'secondary'} mx-2 my-2`} onClick={handleClClick}>
+        <button disabled= {text.length === 0} className={`btn btn-${props.mode==='light'?'dark':'secondary'} mx-2 my-2`} onClick={handleClClick}>
           Clear
         </button>
       </div>
       <div className="container my-3">
         <h1>Your text summary</h1>
         <p>
-          {text.split(" ").length-1} words and {text.length} characters
+          {text.split(" ").filter((element)=>{return element.length!==0}).length} words and {text.length} characters
         </p>
-        <p>{text.split(" ").length - 1 * 0.008} Minutes to read</p>
+        <p>{text.split(" ").length * 0.008} Minutes to read</p>
         <h2>Preview</h2>
-        <p>{text.length<=0?"Enter something in the above text box to preview it here":text}</p>
+        <p>{text.length<=0?"Nothing to preview here":text}</p>
       </div>
     </div>
   );
